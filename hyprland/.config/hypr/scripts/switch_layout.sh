@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Paths
-HYPR_DIR="$HOME/dotfiles/hyprland/.config/hypr"
+HYPR_DIR="$HOME/.dotfiles/hyprland/.config/hypr"
 PC_CONF="$HYPR_DIR/pc.conf"
 LAPTOP_CONF="$HYPR_DIR/laptop.conf"
 CURRENT_LINK="$HYPR_DIR/current.conf"
