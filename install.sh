@@ -17,7 +17,7 @@ fi
 
 # Instalação de Pacotes
 echo -e "[+] Instalando pacotes essenciais...\n"
-paru -S --needed --noconfirm 7zip accountsservice adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adw-gtk-theme-git base base-devel bat bluez bluez-utils brave-bin brightnessctl btop btrfs-progs cava cliphist dgop direnv discord dkms dms-shell-bin dsearch-git efibootmgr eza fastfetch fd ffmpegthumbnailer file-roller firefox firewalld fish foot fzf git git-delta github-cli glycin-gtk4 gnome-keyring greetd-dms-greeter-git grim grimblast-git grub grub-btrfs gst-plugin-pipewire gvfs htop http-parser hyprland hyprpicker hyprpolkitagent inxi iwd jq less libpulse libva-nvidia-driver linux linux-firmware linux-headers man-db mate-polkit matugen maven mpv neovim net-tools network-manager-applet networkmanager nmap noto-fonts-cjk noto-fonts-emoji npm pamixer pavucontrol pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl pnpm polkit-kde-agent power-profiles-daemon-git qalculate-gtk qt5-wayland qt6-multimedia-ffmpeg qt6-wayland qt6ct-kde quickshell-git ripgrep-all satty slack-desktop-wayland slurp smartmontools snap-pac snapper sof-firmware spicetify-cli spotify starship stow syncthing tailscale thunar thunar-archive-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman trash-cli ttf-jetbrains-mono-nerd ttf-ms-fonts ttf-nerd-fonts-symbols-mono tumbler unrar unzip uv uwsm valgrind viewnior vim visual-studio-code-bin wf-recorder wget wireless_tools wireplumber wl-clip-persist wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils xorg-server xorg-xinit paru yazi zellij zoxide zram-generator
+paru -S --needed --noconfirm 7zip accountsservice adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adw-gtk-theme-git base base-devel bat bluez bluez-utils brave-bin brightnessctl btop btrfs-progs cava cliphist dgop direnv discord dkms dms-shell-bin dsearch-git efibootmgr eza fastfetch fd ffmpegthumbnailer file-roller firefox firewalld fish foot fzf git git-delta github-cli glycin-gtk4 gnome-keyring greetd-dms-greeter-git grim grimblast-git grub grub-btrfs gst-plugin-pipewire gvfs htop http-parser hyprland hyprpicker hyprpolkitagent inxi iwd jq less libpulse libva-nvidia-driver linux linux-firmware linux-headers man-db man-pages matugen maven mpv neovim net-tools network-manager-applet networkmanager nmap noto-fonts-cjk noto-fonts-emoji npm pamixer pavucontrol pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl pnpm power-profiles-daemon-git qalculate-gtk qt5-wayland qt6-multimedia-ffmpeg qt6-wayland qt6ct-kde quickshell-git ripgrep-all satty slack-desktop-wayland slurp smartmontools snap-pac snapper sof-firmware spotify starship stow syncthing tailscale thunar thunar-archive-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman trash-cli ttf-jetbrains-mono-nerd ttf-ms-fonts ttf-nerd-fonts-symbols-mono tumbler unrar unzip uv uwsm valgrind viewnior vim visual-studio-code-bin wf-recorder wget wireless_tools wireplumber wl-clip-persist wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils paru yazi zellij zoxide zram-generator
 
 # Instala o DankMaterialShell
 echo -e "[+] Instalando o DankMaterialShell...\n"
@@ -86,6 +86,9 @@ ln -sf ~/.dotfiles/hypland/.config/hypr/pc.conf ~/.config/hypr/current.conf
 # Habilita e sincroniza greetd
 dms greeter enable
 dms greeter sync
+
+# Remove alguns pacotes que vem com o perfil Hyrpland do Archinstall
+paru -Rns --noconfirm dolphin kitty nano polkit-kde-agent
 
 # Muda o shell para fish
 chsh -s $(which fish)

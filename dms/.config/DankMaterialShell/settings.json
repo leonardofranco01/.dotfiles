@@ -141,7 +141,7 @@
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "wifi",
+  "networkPreference": "ethernet",
   "vpnLastConnected": "",
   "iconTheme": "breeze-dark",
   "launcherLogoMode": "apps",
