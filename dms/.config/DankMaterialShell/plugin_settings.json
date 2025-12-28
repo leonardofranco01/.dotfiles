@@ -1,0 +1,31 @@
+{
+  "calculator": {
+    "enabled": true,
+    "noTrigger": false,
+    "trigger": "="
+  },
+  "dankActions": {
+    "enabled": true
+  },
+  "dankBatteryAlerts": {
+    "enabled": true
+  },
+  "webSearch": {
+    "enabled": true,
+    "noTrigger": true,
+    "trigger": "?",
+    "searchEngines": []
+  },
+  "commandRunner": {
+    "enabled": true,
+    "terminal": "foot",
+    "history": [
+      "shutdown now",
+      "reboot",
+      "paru -S qalculate"
+    ]
+  },
+  "grimblast": {
+    "enabled": true
+  }
+}
