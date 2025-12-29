@@ -336,6 +336,10 @@
           "enabled": true
         },
         {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
           "id": "battery",
           "enabled": true
         },

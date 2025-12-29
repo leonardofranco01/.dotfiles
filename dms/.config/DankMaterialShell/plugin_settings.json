@@ -12,7 +12,7 @@
   },
   "webSearch": {
     "enabled": true,
-    "noTrigger": true,
+    "noTrigger": false,
     "trigger": "?",
     "searchEngines": []
   },
@@ -23,9 +23,15 @@
       "shutdown now",
       "reboot",
       "paru -S qalculate"
-    ]
+    ],
+    "noTrigger": false,
+    "trigger": ">"
   },
   "grimblast": {
     "enabled": true
+  },
+  "tailscale": {
+    "enabled": true,
+    "refreshInterval": 10
   }
 }
