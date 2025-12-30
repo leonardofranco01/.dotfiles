@@ -12,20 +12,20 @@ if ! command -v paru &>/dev/null; then
   git clone https://aur.archlinux.org/paru.git /tmp/paru
   cd /tmp/paru
   makepkg -si --noconfirm
-  cd ~
+  cd $HOME
 fi
 
 # Instalação de Pacotes
 echo -e "[+] Instalando pacotes essenciais...\n"
-paru -S --needed --noconfirm 7zip accountsservice adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts adw-gtk-theme-git base base-devel bat bluez bluez-utils brave-bin brightnessctl btop btrfs-progs cava cliphist dgop direnv discord dkms dms-shell-bin dsearch-git efibootmgr eza fastfetch fd ffmpegthumbnailer file-roller firefox firewalld fish foot fzf git git-delta github-cli glycin-gtk4 gnome-keyring greetd-dms-greeter-git grim grimblast-git grub grub-btrfs gst-plugin-pipewire gvfs htop http-parser hyprland hyprpicker hyprpolkitagent inxi iwd jq less libpulse libva-nvidia-driver linux linux-firmware linux-headers man-db man-pages matugen maven mpv neovim net-tools network-manager-applet networkmanager nmap noto-fonts-cjk noto-fonts-emoji npm pamixer pavucontrol pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl pnpm power-profiles-daemon-git qalculate-gtk qt5-wayland qt6-multimedia-ffmpeg qt6-wayland qt6ct-kde quickshell-git ripgrep-all satty slack-desktop-wayland slurp smartmontools snap-pac snapper sof-firmware spotify starship stow syncthing tailscale thunar thunar-archive-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman trash-cli ttf-jetbrains-mono-nerd ttf-ms-fonts ttf-nerd-fonts-symbols-mono tumbler unrar unzip uv uwsm valgrind viewnior vim visual-studio-code-bin wf-recorder wget wireless_tools wireplumber wl-clip-persist wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils paru yazi zellij zoxide zram-generator
+paru -S --needed --noconfirm accountsservice adobe-source-han-sans-otc-fonts adobe-source-han-serif-otc-fonts base base-devel bat bluez bluez-utils brave-bin brightnessctl btop btrfs-progs cava cliphist dgop direnv discord dkms dms-shell-bin dsearch-git efibootmgr eza fastfetch fd ffmpegthumbnailer file-roller firefox firewalld fish foot fzf git git-delta github-cli glycin-gtk4 gnome-keyring greetd-dms-greeter-git grim grimblast-git grub grub-btrfs gst-plugin-pipewire gvfs htop http-parser hyprland hyprpicker hyprpolkitagent inxi iwd jq less libpulse libva-nvidia-driver linux linux-firmware linux-headers man-db man-pages matugen maven mpv neovim net-tools network-manager-applet networkmanager nmap noto-fonts-cjk noto-fonts-emoji npm pamixer pavucontrol pipewire pipewire-alsa pipewire-jack pipewire-pulse playerctl pnpm power-profiles-daemon-git qalculate-gtk qt5-wayland qt6-multimedia-ffmpeg qt6-wayland qt6ct-kde quickshell-git ripgrep-all satty slack-desktop-wayland slurp smartmontools snap-pac snapper sof-firmware spotify starship stow syncthing tailscale thunar thunar-archive-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman trash-cli ttf-jetbrains-mono-nerd ttf-ms-fonts ttf-nerd-fonts-symbols-mono tumbler unrar unzip uv uwsm valgrind viewnior vim visual-studio-code-bin wf-recorder wget wireless_tools wireplumber wl-clip-persist wl-clipboard xdg-desktop-portal-gtk xdg-desktop-portal-hyprland xdg-utils paru yazi zellij zoxide zram-generator
 
 # Instala o DankMaterialShell
 echo -e "[+] Instalando o DankMaterialShell...\n"
 curl -fsSL https://install.danklinux.com | sh
 
 # Instala os dotfiles
-rm -rf ~/.config/.bashrc ~/.config/hypr ~/.config/dgop ~/.config/DankMaterialShell ~/.config/danksearch ~/.config/fish ~/.config/foot ~/.gitconfig ~/.config/nvim ~/.config/pavucontrol.ini ~/.config/qalculate ~/.ssh/config ~/.config/starship.toml ~/.config/viewnior ~/.config/yazi ~/.config/zellij
-cd ~/.dotfiles
+rm -rf $HOME/.config/.bashrc $HOME/.config/hypr $HOME/.config/dgop $HOME/.config/DankMaterialShell $HOME/.config/danksearch $HOME/.config/fish $HOME/.config/foot $HOME/.gitconfig $HOME/.config/nvim $HOME/.config/pavucontrol.ini $HOME/.config/qalculate $HOME/.ssh/config $HOME/.config/starship.toml $HOME/.config/viewnior $HOME/.config/yazi $HOME/.config/zellij
+cd $HOME/.dotfiles
 stow bash dgop dms dsearch fish foot git hyprland nvim pavucontrol qalculate ssh starship viewnior yazi zellij
 
 # Ativa os daemons
@@ -67,13 +67,13 @@ generate_ssh_key() {
 }
 
 # Diretório .ssh
-mkdir -p "~/.ssh"
-chmod 700 "~/.ssh"
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
 
 # Paths das chaves
-PERSONAL_KEY="~/.ssh/personal"
-CONPEC_KEY="~/.ssh/conpec"
-UNICAMP_KEY="~/.ssh/unicamp"
+PERSONAL_KEY="$HOME/.ssh/personal"
+CONPEC_KEY="$HOME/.ssh/conpec"
+UNICAMP_KEY="$HOME/.ssh/unicamp"
 
 echo -e "[+] Gerando chaves SSH (personal, conpec, unicamp)\n"
 generate_ssh_key "$PERSONAL_KEY" ed25519 "leonardofrancosilva01@gmail.com"
@@ -81,14 +81,11 @@ generate_ssh_key "$CONPEC_KEY" ed25519 "leonardo.franco@conpec.com.br"
 generate_ssh_key "$UNICAMP_KEY" rsa "l205007@dac.unicamp.br" 4096
 
 # Cria symlink para config do Hyprland
-ln -sf ~/.dotfiles/hypland/.config/hypr/pc.conf ~/.config/hypr/current.conf
+ln -sf $HOME/.dotfiles/hyprland/.config/hypr/pc.conf $HOME/.config/hypr/current.conf
 
 # Habilita e sincroniza greetd
 dms greeter enable
 dms greeter sync
-
-# Remove alguns pacotes que vem com o perfil Hyrpland do Archinstall
-paru -Rns --noconfirm dolphin kitty nano polkit-kde-agent
 
 # Muda o shell para fish
 chsh -s $(which fish)

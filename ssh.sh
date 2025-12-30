@@ -25,13 +25,13 @@ generate_ssh_key() {
 }
 
 # Diretório .ssh
-mkdir -p "~/.ssh"
-chmod 700 "~/.ssh"
+mkdir -p "$HOME/.ssh"
+chmod 700 "$HOME/.ssh"
 
 # Paths das chaves
-PERSONAL_KEY="~/.ssh/personal"
-CONPEC_KEY="~/.ssh/conpec"
-UNICAMP_KEY="~/.ssh/unicamp"
+PERSONAL_KEY="$HOME/.ssh/personal"
+CONPEC_KEY="$HOME/.ssh/conpec"
+UNICAMP_KEY="$HOME/.ssh/unicamp"
 
 echo -e "[+] Gerando chaves SSH (personal, conpec, unicamp)\n"
 generate_ssh_key "$PERSONAL_KEY" ed25519 "leonardofrancosilva01@gmail.com"
