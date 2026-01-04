@@ -141,7 +141,7 @@
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "ethernet",
+  "networkPreference": "wifi",
   "vpnLastConnected": "",
   "iconTheme": "breeze-dark",
   "launcherLogoMode": "apps",
@@ -333,10 +333,6 @@
         },
         {
           "id": "notificationButton",
-          "enabled": true
-        },
-        {
-          "id": "systemTray",
           "enabled": true
         },
         {
