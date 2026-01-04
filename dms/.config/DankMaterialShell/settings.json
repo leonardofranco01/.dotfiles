@@ -1,5 +1,5 @@
 {
-  "currentThemeName": "cat-blue",
+  "currentThemeName": "monochrome",
   "customThemeFile": "",
   "matugenScheme": "scheme-fidelity",
   "runUserMatugenTemplates": true,
@@ -100,12 +100,12 @@
       "width": 50
     },
     {
-      "id": "idleInhibitor",
+      "id": "doNotDisturb",
       "enabled": true,
       "width": 50
     },
     {
-      "id": "doNotDisturb",
+      "id": "idleInhibitor",
       "enabled": true,
       "width": 50
     }
@@ -289,7 +289,8 @@
         },
         {
           "id": "focusedWindow",
-          "enabled": true
+          "enabled": true,
+          "focusedWindowCompactMode": true
         }
       ],
       "centerWidgets": [
@@ -332,6 +333,10 @@
           "enabled": true
         },
         {
+          "id": "systemTray",
+          "enabled": true
+        },
+        {
           "id": "notificationButton",
           "enabled": true
         },
@@ -347,8 +352,8 @@
       "spacing": 3,
       "innerPadding": -8,
       "bottomGap": 0,
-      "transparency": 1,
-      "widgetTransparency": 1,
+      "transparency": 0.5,
+      "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": false,
@@ -365,7 +370,8 @@
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
-      "maximizeDetection": true
+      "maximizeDetection": true,
+      "widgetOutlineEnabled": false
     }
   ],
   "configVersion": 2
