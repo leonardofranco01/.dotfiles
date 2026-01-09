@@ -30,8 +30,9 @@
   "grimblast": {
     "enabled": true
   },
-  "tailscale": {
+  "dockerManager": {
     "enabled": true,
-    "refreshInterval": 10
+    "terminalApp": "foot",
+    "groupByCompose": false
   }
 }

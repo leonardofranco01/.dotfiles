@@ -1,7 +1,7 @@
 {
-  "currentThemeName": "monochrome",
+  "currentThemeName": "dynamic",
   "customThemeFile": "",
-  "matugenScheme": "scheme-fidelity",
+  "matugenScheme": "scheme-monochrome",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -14,7 +14,7 @@
   "useFahrenheit": false,
   "nightModeEnabled": false,
   "animationSpeed": 0,
-  "customAnimationDuration": 0,
+  "customAnimationDuration": 200,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
   "blurWallpaperOnOverview": false,
@@ -141,7 +141,7 @@
   "weatherCoordinates": "40.7128,-74.0060",
   "useAutoLocation": true,
   "weatherEnabled": true,
-  "networkPreference": "wifi",
+  "networkPreference": "ethernet",
   "vpnLastConnected": "",
   "iconTheme": "breeze-dark",
   "launcherLogoMode": "apps",
@@ -305,13 +305,13 @@
         {
           "id": "weather",
           "enabled": true
-        },
-        {
-          "id": "systemUpdate",
-          "enabled": true
         }
       ],
       "rightWidgets": [
+        {
+          "id": "dockerManager",
+          "enabled": true
+        },
         {
           "id": "memUsage",
           "enabled": true
@@ -333,11 +333,11 @@
           "enabled": true
         },
         {
-          "id": "systemTray",
+          "id": "notificationButton",
           "enabled": true
         },
         {
-          "id": "notificationButton",
+          "id": "systemTray",
           "enabled": true
         },
         {
@@ -352,7 +352,7 @@
       "spacing": 3,
       "innerPadding": -8,
       "bottomGap": 0,
-      "transparency": 0.5,
+      "transparency": 0,
       "widgetTransparency": 0,
       "squareCorners": false,
       "noBackground": false,
