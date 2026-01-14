@@ -13,7 +13,7 @@
   "webSearch": {
     "enabled": true,
     "noTrigger": false,
-    "trigger": "?",
+    "trigger": "\\",
     "searchEngines": []
   },
   "commandRunner": {
@@ -34,5 +34,8 @@
     "enabled": true,
     "terminalApp": "foot",
     "groupByCompose": false
+  },
+  "dankDesktopWeather": {
+    "enabled": true
   }
 }

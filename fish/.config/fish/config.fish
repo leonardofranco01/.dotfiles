@@ -17,7 +17,7 @@ if status is-interactive
     # end
 
     set -g fish_greeting
-    starship init fish | source
+    # starship init fish | source
     zoxide init fish --cmd cd | source
     fzf --fish | source
     direnv hook fish | source
