@@ -1,8 +1,13 @@
 {
   "currentThemeName": "dynamic",
-  "currentThemeCategory": "generic",
-  "customThemeFile": "",
-  "registryThemeVariants": {},
+  "currentThemeCategory": "dynamic",
+  "customThemeFile": "/home/leo/.config/DankMaterialShell/themes/catppuccin/theme.json",
+  "registryThemeVariants": {
+    "catppuccin": {
+      "flavor": "mocha",
+      "accent": "blue"
+    }
+  },
   "matugenScheme": "scheme-monochrome",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
@@ -10,7 +15,7 @@
   "dockTransparency": 1,
   "widgetBackgroundColor": "sc",
   "widgetColorMode": "default",
-  "cornerRadius": 12,
+  "cornerRadius": 32,
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": -1,
   "niriLayoutBorderSize": -1,
@@ -24,7 +29,7 @@
   "showSeconds": false,
   "useFahrenheit": false,
   "nightModeEnabled": false,
-  "animationSpeed": 0,
+  "animationSpeed": 4,
   "customAnimationDuration": 200,
   "wallpaperFillMode": "Fill",
   "blurredWallpaperLayer": false,
@@ -186,7 +191,7 @@
   "mediaSize": 0,
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "grid",
-  "sortAppsAlphabetically": false,
+  "sortAppsAlphabetically": true,
   "appLauncherGridColumns": 4,
   "spotlightCloseNiriOverview": true,
   "niriOverviewOverlayEnabled": true,
@@ -461,7 +466,7 @@
       "innerPadding": -8,
       "bottomGap": 0,
       "transparency": 0,
-      "widgetTransparency": 0,
+      "widgetTransparency": 0.1,
       "squareCorners": false,
       "noBackground": false,
       "gothCornersEnabled": false,
@@ -478,8 +483,12 @@
       "visible": true,
       "popupGapsAuto": true,
       "popupGapsManual": 4,
-      "maximizeDetection": true,
-      "widgetOutlineEnabled": false
+      "maximizeDetection": false,
+      "widgetOutlineEnabled": false,
+      "scrollYBehavior": "none",
+      "shadowIntensity": 0,
+      "shadowColorMode": "text",
+      "shadowOpacity": 10
     }
   ],
   "desktopClockEnabled": false,
