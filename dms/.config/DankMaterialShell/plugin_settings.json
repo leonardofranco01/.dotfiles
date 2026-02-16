@@ -1,41 +1,27 @@
 {
-  "calculator": {
-    "enabled": true,
-    "noTrigger": false,
-    "trigger": "="
-  },
-  "dankActions": {
-    "enabled": true
-  },
-  "dankBatteryAlerts": {
-    "enabled": true
-  },
-  "webSearch": {
-    "enabled": true,
-    "noTrigger": false,
-    "trigger": "\\",
-    "searchEngines": []
-  },
-  "commandRunner": {
-    "enabled": true,
-    "terminal": "foot",
-    "history": [
-      "shutdown now",
-      "reboot",
-      "paru -S qalculate"
-    ],
-    "noTrigger": false,
-    "trigger": ">"
-  },
-  "grimblast": {
-    "enabled": true
-  },
   "dockerManager": {
     "enabled": true,
     "terminalApp": "foot",
-    "groupByCompose": false
+    "groupByCompose": false,
+    "showPorts": true,
+    "autoScrollOnExpand": true,
+    "dockerBinary": "docker"
   },
-  "dankDesktopWeather": {
-    "enabled": true
+  "dmsSessionizer": {
+    "terminal": "foot",
+    "noTrigger": false,
+    "trigger": "tm",
+    "enabled": true,
+    "projectsDir": "~/projects, ~/projects/dotfiles",
+    "killExistingTerminal": true,
+    "terminalBehavior": "reuseSession",
+    "includeHidden": true,
+    "includeSymlinks": true,
+    "customTerminal": "foot",
+    "maxResults": "50"
+  },
+  "webSearch": {
+    "enabled": true,
+    "searchEngines": []
   }
 }
