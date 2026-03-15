@@ -14,7 +14,6 @@ brightnessctl
 btop
 cava
 cliphist
-cups
 dgop
 direnv
 discord

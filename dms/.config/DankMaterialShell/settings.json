@@ -8,7 +8,7 @@
       "accent": "blue"
     }
   },
-  "matugenScheme": "scheme-monochrome",
+  "matugenScheme": "scheme-tonal-spot",
   "runUserMatugenTemplates": true,
   "matugenTargetMonitor": "",
   "popupTransparency": 1,
@@ -21,9 +21,9 @@
   "niriLayoutGapsOverride": -1,
   "niriLayoutRadiusOverride": -1,
   "niriLayoutBorderSize": -1,
-  "hyprlandLayoutGapsOverride": -1,
-  "hyprlandLayoutRadiusOverride": -1,
-  "hyprlandLayoutBorderSize": -1,
+  "hyprlandLayoutGapsOverride": 2,
+  "hyprlandLayoutRadiusOverride": 8,
+  "hyprlandLayoutBorderSize": 1,
   "mangoLayoutGapsOverride": -1,
   "mangoLayoutRadiusOverride": -1,
   "mangoLayoutBorderSize": -1,
@@ -441,10 +441,35 @@
   },
   "niriOutputSettings": {},
   "hyprlandOutputSettings": {},
-  "displayProfiles": {},
-  "activeDisplayProfile": {},
+  "displayProfiles": {
+    "hyprland": {
+      "profile_1773602135401_5f4onq": {
+        "id": "profile_1773602135401_5f4onq",
+        "name": "Default",
+        "outputSet": [
+          "AOC 24G2W1G4",
+          "BOE 0x0C02"
+        ],
+        "createdAt": 1773602135401,
+        "updatedAt": 1773602135401
+      },
+      "profile_1773602208217_a8yfv8": {
+        "id": "profile_1773602208217_a8yfv8",
+        "name": "Custom",
+        "outputSet": [
+          "AOC 24G2W1G4",
+          "BOE 0x0C02"
+        ],
+        "createdAt": 1773602208217,
+        "updatedAt": 1773602208217
+      }
+    }
+  },
+  "activeDisplayProfile": {
+    "hyprland": "profile_1773602135401_5f4onq"
+  },
   "displayProfileAutoSelect": false,
-  "displayShowDisconnected": false,
+  "displayShowDisconnected": true,
   "displaySnapToEdge": true,
   "barConfigs": [
     {

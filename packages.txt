@@ -15,7 +15,6 @@ brightnessctl
 btop
 cava
 cliphist
-cups
 dgop
 direnv
 discord
@@ -46,7 +45,6 @@ grim
 gst-plugin-pipewire
 gvfs
 htop
-hyprpicker
 hyprpolkitagent
 inotify-tools
 intel-media-driver
@@ -55,7 +53,6 @@ inxi
 iwd
 jdk21-openjdk
 jdownloader2
-jq
 less
 libpulse
 libva-intel-driver
@@ -85,7 +82,6 @@ pipewire-jack
 pipewire-pulse
 playerctl
 pnpm
-power-profiles-daemon-git
 qalculate-gtk
 qt5-wayland
 qt6-multimedia-ffmpeg
