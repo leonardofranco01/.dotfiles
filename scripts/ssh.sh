@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # Função para criação segura de chaves SSH (apenas se não existirem)
 generate_ssh_key() {
   local key_path="$1"

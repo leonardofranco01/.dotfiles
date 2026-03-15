@@ -1,0 +1,9 @@
+brave-bin
+gradia
+greetd-dms-greeter-git
+jdownloader2
+power-profiles-daemon-git
+qt6ct-kde
+slack-desktop-wayland
+spotify
+visual-studio-code-bin
