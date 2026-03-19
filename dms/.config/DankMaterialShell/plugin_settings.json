@@ -12,7 +12,7 @@
     "noTrigger": false,
     "trigger": "tm",
     "enabled": true,
-    "projectsDir": "~/projects, ~/projects/dotfiles",
+    "projectsDir": "~/projects",
     "killExistingTerminal": true,
     "terminalBehavior": "reuseSession",
     "includeHidden": true,
