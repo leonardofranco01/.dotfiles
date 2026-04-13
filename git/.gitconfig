@@ -3,6 +3,7 @@
 [user]
 	name = Leonardo Franco
 	email = leonardofrancosilva01@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAefMdIcrvr9P2KD6U6A/SQmztOn07RrG52j7VUDsf18
 [core]
 	editor = nvim
 	pager = delta
@@ -19,3 +20,9 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	allowedSignersFile = /home/leo/.ssh/allowed_signers

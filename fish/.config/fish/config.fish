@@ -27,6 +27,7 @@ if status is-interactive
     set -g fzf_history_opts --preview="echo '{}'" --preview-window=down:3:wrap
     set -g fzf_preview_file_cmd bat --style=numbers --color=always --line-range :500
     # tmux new-session -A -s 'main'
+    set -gx SSH_AUTH_SOCK ~/.bitwarden-ssh-agent.sock
 
 end
 
