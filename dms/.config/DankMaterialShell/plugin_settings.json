@@ -18,7 +18,9 @@
     "includeHidden": true,
     "includeSymlinks": true,
     "customTerminal": "foot",
-    "maxResults": "50"
+    "maxResults": "50",
+    "mruSort": true,
+    "mruData": "{\"/home/leo/projects/moodle-page-builder\":1778788559164,\"/home/leo/projects/conpec-app\":1778455161046,\"/home/leo/projects/bas-eng-course\":1778638461389,\"/home/leo/projects/laborat-rio-3-makita-chronicles\":1779147819188,\"/home/leo/projects/prj-instituto-chamex\":1779139448935,\"/home/leo/projects/prj-fundacao-csn\":1779140164630,\"/home/leo/projects/relataria\":1779248032563,\"/home/leo/projects/transcribe-api\":1779375444279,\"/home/leo/projects/relataria-project\":1781293233691,\"/home/leo/projects/feedbacks\":1781724689263}"
   },
   "webSearch": {
     "enabled": true,
